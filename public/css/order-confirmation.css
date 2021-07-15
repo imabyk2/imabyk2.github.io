@@ -1,0 +1,287 @@
+.pos-confirmation-container{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.order-confirmation{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white
+}
+
+.order-confirmation .content p{
+    font-size: 20px;
+}
+.order-confirmation span{
+    color: rgb(255, 217, 0);
+}
+.order-confirmation .card{
+    background-color: rgb(53, 53, 53);
+    height: 350px;
+    width: 100%;
+    border-radius:50px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px
+}
+
+.order-confirmation .card img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.order-confirmation H1{
+    text-align: center;
+}
+
+.tbl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-top: 50px;
+}
+
+.tbl h4{
+    font-weight: 600;
+    color:rgb(236, 201, 0);
+}
+
+.tbl h5{
+    font-weight: 700;
+}
+.tbl h6{
+    font-size: 23px;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.212);
+}
+.t-row{
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin: 50px 0px;
+    }
+
+.billing, .payment{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.payment .card-details{
+    display: flex;
+    flex-direction: row;
+}
+
+.payment .card-details img{
+    height : 30px;
+    margin-right: 20px;
+}
+
+.payment .download-invoice-btn{
+    width: 200px;
+}
+@media only screen and (max-width: 1024px){
+    .pos-confirmation-container{
+        width: 100%;
+    }
+
+    .order-confirmation .card img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 50px;    
+    }
+}
+@media only screen and (max-width: 768px){
+    .order-confirmation .card .content{
+        width: 70%;
+        padding: 20px;
+    }
+
+
+    .tbl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .order-confirmation .card img{
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 50px;    
+    }
+    .pos-confirmation-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+    }
+    .order-confirmation{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color:white;
+        padding: 20px;
+    }
+    .order-confirmation .card{
+        background-color: rgb(53, 53, 53);
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px
+    }
+
+    
+    
+
+
+}
+
+@media only screen and (max-width: 420px){
+    .pos-confirmation-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0px;
+        width: 100%;
+    }
+    .order-confirmation{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color:white;
+        padding: 20px;
+    }
+    .order-confirmation .card .content{
+        width: 100%;
+        padding: 10px;
+    }
+    .order-confirmation .card{
+        background-color: rgb(53, 53, 53);
+        height:600px;
+        width: 100%;
+        border-radius:70px;
+        display: flex; 
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 10px
+    }
+
+    .order-confirmation .card img{
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 50px;
+        
+    }
+    
+    .order-confirmation H1{
+        text-align: center;
+    }
+
+    .tbl{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .order-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 50px 0px;
+    }
+
+    .billing, .payment{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .billing{
+        margin-bottom: 25px;
+    }
+
+    .payment .card-details{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .payment .download-invoice-btn{
+        width: 200px;
+
+    }
+
+    .order-details h3{
+        font-size: 30px;
+    }
+    .order-details h6{
+        font-size: 20px;
+    }
+    .card h5,.card h6{
+        font-size: 20px;
+    }
+
+    .t-row{
+        width: 100%;
+        height: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .txt-center{
+        text-align: center;
+        width: 100%;
+    }
+
+    .order-confirmation h1{
+        font-size: 25px;
+        margin: 25px 0px;
+    }
+
+}

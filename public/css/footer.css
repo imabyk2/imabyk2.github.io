@@ -1,0 +1,91 @@
+/* FOOTER */
+.footer-wrapper{
+    padding: 50px 50px 50px 50px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.footer-color{
+    background-color: #0a000f;
+}
+
+.footer-column{
+    color: white;
+}
+
+.socials i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.footer-column .glow{
+    color:#edc8ff;
+    font-family: 'NEON CLUB MUSIC', 'Poppins';
+    font-size: 23px;
+    font-weight: 300;
+    animation: glow .5s ease-in-out infinite alternate;
+}
+
+.footer-copyright{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+} 
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 3px #edc8ff, 0 0 5px #edc8ff, 0 0 7px #b512ff, 0 0 9px #b512ff, 0 0 11px #b512ff, 0 0 40px #b512ff, 0 0 50px #b512ff;
+    }
+    
+    to {
+      text-shadow: 0 0 3px #edc8ff, 0 0 5px #d16dff, 0 0 7px #d16dff, 0 0 9px #d16dff, 0 0 11px #d16dff, 0 0 40px #d16dff, 0 0 50px #d16dff;
+    }
+  }
+@media only screen and (max-width: 768px){
+
+
+    .footer-wrapper{
+        width: 100%;
+
+    }
+    .footer-column{
+        width: 100%;
+    }
+    .footer-column h1{
+        font-size: 15px !important;
+    }
+
+    .footer-column h5{
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width: 420px){
+    .footer-column{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .footer-color{
+        background-color: #0a000f;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer-column h1{
+        font-size: 20px !important;
+    }
+
+    .footer-column h5{
+        font-size: 20px !important;
+    }
+}

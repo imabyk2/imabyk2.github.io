@@ -1,0 +1,482 @@
+.checkout-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+}
+
+.checkout-left{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.checkout-left h2{
+    margin-top: 30px;
+}
+
+.checkout-cards-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.checkout-cards-container .checkout-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(59, 59, 59);
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+.checkout-card table{
+    width: auto;
+    height: 100%;
+}
+
+.checkout-card .product-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.checkout-card .product-details .card-title{
+    margin-left: 20px;
+}
+.checkout-card table td,.checkout-card table th{
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.checkout-cards-container .checkout-card img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+
+.checkout-billing-address{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.address-controls{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.address-controls button{
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    margin-right: 0px;
+}
+
+.checkout-billing-address .address-card{
+    width: 100%;
+    height: 150px;
+
+    border-radius: 25px;
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(59, 59, 59);
+    margin-right: 20px;
+}
+
+.checkout-payment-method{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.checkout-payment-method .payment-card{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.checkout-payment-method .active{
+    border: 3px solid #b512ff;
+}
+
+.checkout-payment-method .payment-card img{
+    width: 100px;
+   
+}
+
+.checkout-right{
+    top: 0px;
+    width: 30%;
+    height: 100%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.checkout-payment-card{
+    background: rgb(59, 59, 59);
+    width: 100%;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.checkout-right .payment-table{
+    width: 100%;
+}
+
+.checkout-right .payment-table td{
+    text-align: right;
+}
+.checkout-right .payment-table h4{
+    color:goldenrod;
+    margin-top: 10px;
+}
+
+.checkout-payment-card .discount, .checkout-payment-card .sign-up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.checkout-payment-card .discount input{
+    width: 70%;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgb(50,50,50);
+    font-size: 15px;
+    padding-left: 10px;
+    color: white;
+}
+
+.checkout-payment-card .discount button{
+    width: 25%;
+    height: 40px;
+    font-size: 15px;
+    margin-right: 0px;
+}
+
+.checkout-payment-card .sign-up input{
+    height: 30px;
+    width: 30px;
+}
+
+.checkout-payment-card .sign-up p{
+    font-size: 15px;
+    line-height: 15px;
+    margin-left: 25px;
+
+}
+
+.checkout-right .payment-integration{
+    width: 100%;
+    height: 200px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(59,59,59);
+    border-radius: 25px;
+}
+.address-modal-container{
+    height: 400px;
+    width:40%;
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 40px;
+    color: white;
+    padding: 25px;
+}
+
+
+.address-modal{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.modal-btn{
+    height: 40px;
+    width: 100px;
+    background-color: rgba(181,30,255,1);
+    color: #fff;
+    border: 0px;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.address-btn-controls{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address-modal-container .add-new-address{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    outline: none;
+    border: 0px solid rgba(181,30,255,1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.1s ease;
+}
+
+.address-modal-container .add-new-address:hover{
+    box-shadow: 0px 5px 10px rgb(30, 30, 30);
+}
+
+.modal-address-card-container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(175, 175, 175);
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 20px 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.modal-address-card-container .modal-address-card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 27, 27);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.modal-address-card-container .modal-address-card h6{
+    font-size: 12px;
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    .checkout-container{
+        margin-top: 30px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: white;
+    }
+
+    .checkout-right, .checkout-left{
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .checkout-billing-address{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .checkout-container h2{
+        font-size: 25px;
+    }
+
+    .address-controls button{
+        width: 80px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 600px;
+        margin-right: 0px;
+    }
+
+    .checkout-right{
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .checkout-cards-container .checkout-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(50, 50, 50);
+        padding: 10px;
+        border-radius: 25px;
+        margin-bottom: 25px;
+    }
+    .checkout-card table{
+        width: auto;
+        height: 100%;
+    }
+
+    .checkout-card .product-details{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .checkout-card .product-details .card-title{
+        margin-left: 20px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .checkout-card .product-details .card-title h4{
+        font-size: 20px;
+    }
+    .checkout-card .product-details .card-title h6{
+        font-size: 10px;
+    }
+    .checkout-card table td,.checkout-card table th{
+        padding: 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+    
+    .checkout-cards-container .checkout-card img{
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        border-radius: 7px;
+        margin-left: 20px;
+        
+    }
+    .checkout-payment-method{
+        width: 100%;
+    }
+    .checkout-payment-method .payment-card{
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        margin-right: 25px;
+    }
+
+    .checkout-card table{
+        width: 100%;
+        height: 100%;
+    }
+
+    .address-modal-container{
+        height: 500px;
+        width:90%;
+        display: flex;
+        flex-direction: column;  
+        justify-content: center !important;
+
+    }
+
+    .modal-btn{
+        height: 40px;
+        width: 100px;
+        background-color: rgba(181,30,255,1);
+        color: #fff;
+        border: 0px;
+        font-size: 15px;
+        border-radius: 10px;
+        outline: none;
+    }
+
+    .address-btn-controls{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .address-modal .add-new-address{
+        height: 50px;
+        width: 100%;
+        background-color: rgb(27, 27, 27);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .modal-address-card-container{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid rgb(175, 175, 175);
+        height: 60%;
+        width: 100%;
+        border-radius: 25px;
+        padding: 10px;
+        margin: 20px 0px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .modal-address-card-container .modal-address-card{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(27, 27, 27);
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-bottom: 15px;
+    }
+
+    .modal-address-card-container .modal-address-card h6{
+        font-size: 12px;
+    }
+}

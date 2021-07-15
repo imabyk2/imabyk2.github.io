@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Gamer Galaxy</title>
+
+    <!-- BOOTSTRAP STYLES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!-- MAIN HOME STYLES -->
+    <link rel="stylesheet" href="public/css/style.css" type="text/css">
+
+    <!-- SIDEBAR NAVIGATION STYLES -->
+    <link rel="stylesheet" href="public/css/side-nav-bar.css" type="text/css">
+    <link rel="stylesheet" href="public/css/footer.css" type="text/css">
+    
+    <!-- SLIDER STYLES -->
+    <link rel="stylesheet" href="public\css\slider\splide-core.min.css">
+    <link rel="stylesheet" href="public\css\slider\splide-skyblue.min.css">
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+
+<!-- HEADER-->
+<header class="header">
+        <ul class="navlinks">
+            <li><a href="home.html">
+                <i class="fas fa-home"></i><h6 class="side-navbar-label">Home</h6>
+            </a></li>
+            <li><a href="#">
+                <i class="fas fa-shopping-cart"></i><h6 class="side-navbar-label">Cart</h6>
+            </a></li>
+            <li><a href="user-inventory.html">
+                <i class="fas fa-gamepad"></i><h6 class="side-navbar-label">Inventory</h6>
+            </a></li>
+            <li><a href="profile-page.html">
+                <i class="fas fa-user"></i><h6 class="side-navbar-label">Profile</h6>
+            </a></li>
+            <li><a href="settings-page.html">
+                <i class="fas fa-sliders-h"></i><h6 class="side-navbar-label">Settings</h6>
+            </a></li>     
+        </ul>
+
+
+        <div class="lines">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+</header>
+
+<div class="container">
+    <div class="top-header">
+        <div class="left-side">
+            <div class="mob-hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+            </div>
+            <div class="logo"><a href="home.html">GG.</a></div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Here">
+                <a href="#"><div class="search-btn"><i class="fas fa-search"></i></div></a>
+            </div>
+        </div>
+        <div class="right-side">
+            <img class="wishlist-icon" src="public\images\wishlist icon.svg" alt="">
+            <a href="#"><div class="search-btn cart-btn"><i class="fas fa-shopping-cart"></i></div></a>
+            <a href="profile-page.html">
+                <img class="shadow"src="public\images\avatar.jpg" alt="" srcset="">
+            </a>
+        </div>
+    </div>
+    <div class="search-bar-mobile">
+        <input type="text" placeholder="Search Here">
+        <a href="#"><div class="search-btn"><i class="fas fa-search"></i></div></a>
+    </div>
+</div>
+   
+<!-- BANNER CARAOUSEL-->
+<div class="splide">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+                <div class="container">
+                    <div class="banner">
+                        <img src="public\images\witcher.png" alt="the witcher png" class="banner-png">
+                        <img src="public\images\withcer bg.jpg" alt="the witcher" class="banner-bg">
+                        <h2 class="banner-heading">Wither IX: explore the whole new world</h2>
+                        <h6 class="banner-description">some short description</h6>
+                        <a href="#">
+                            <button class="solid-btn banner-btn-pos" type="button">Explore</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="splide__slide">
+                <div class="container">
+                    <div class="banner">
+                        <img src="public\images\far-cry-6.png" alt="the witcher png" class="banner-png">
+                        <img src="public\images\far-cry-6-listing.png" alt="the witcher" class="banner-bg">
+                        <h2 class="banner-heading">Wither IX: explore the whole new world</h2>
+                        <h6 class="banner-description">some short description</h6>
+                        <a href="#">
+                            <button class="solid-btn banner-btn-pos" type="button">Explore</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!-- CONSOLE SECTION-->
+<div class="container">
+    <div>
+        <div class="row row-console">
+            <div class="col-3">
+            <img src="public\images\xbox.jpg" alt="" class="console-store">
+            <h5 class="console-text">Xbox Games<h5>
+            </div>
+
+            <div class="col-3">
+                <img src="public\images\ps4.png" alt="" class="console-store">
+                <h5 class="console-text">PS Games<h5>
+            </div>
+
+            <div class="col-3">
+                <img src="public\images\nintendo.png" alt="" class="console-store">
+                <h5 class="console-text">Nintendo Games<h5>
+            </div>
+
+            <div class="col-3">
+                <img src="public\images\pc.png" alt="" class="console-store">
+                <h5 class="console-text">PC Games<h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CATEGORIES SECTION -->
+<div class="container">
+    <h3 class="categories-heading">Categories</h3>
+    <div class="categories-wrapper">
+        
+            <div class="categories-tab">
+                <img src="public\images\far-cry-6-listing.png" alt="" srcset="" >
+                <h5>strategic</h5>
+            </div>
+
+            <div class="categories-tab">
+                <img src="public\images\withcer bg.jpg" alt="" srcset="" >
+                <h5>strategic</h5>
+            </div>
+
+            <div class="categories-tab">
+                <img src="public\images\daysgone.jpg" alt="" srcset="" >
+                <h5>strategic</h5>
+            </div>
+
+            <div class="categories-tab">
+                <img src="public\images\cyberpunk.jpg" alt="" srcset="" >
+                <h5>strategic</h5>
+            </div>
+
+            <div class="categories-tab">
+                <img src="public\images\cyberpunk.jpg" alt="" srcset="" >
+                <h5>strategic</h5>
+            </div>
+            <div class="categories-tab">
+                <img src="public\images\cyberpunk.jpg" alt="" srcset="" >
+                <h5>strategic</h5>
+            </div>
+            <div class="categories-tab">
+                <img src="public\images\cyberpunk.jpg" alt="" srcset="" >
+                <h5>strategic</h5>
+            </div>
+        </div>
+        
+    </div>
+
+
+<!-- FEATURED PROFUCT SECTION -->
+<div class="container featured-product">
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="public\images\cyberpunk.jpg" alt="" >
+        </div>
+        <div class="col-sm-6">
+            <div class="container small-container">
+                <div class="row"><h1>CyberPunk 2077</h1></div>
+                <div class="row"><P>some random description of the product to comple the user to purchase the game</P></div>
+                <div class="row"><P><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></P></div>
+                <div class="row"><h2>$80.00</h2></div>
+                <div class="row btn-wrapper">
+                
+                        <a href="product-page.html">
+                            <button class="solid-product-btn btn-glow" type="button">Buy Now</button>
+                        </a>
+                    
+
+                        <a href="#">
+                            <button class="outline-product-btn btn-glow" type="button">Add To Cart</button>
+                        </a>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BEST SELLER PRODUCT SECTION -->  
+<div class="container">
+        <h3 class="cards-heading">Best Seller Games</h3>
+    <div class="product-card-wrapper">
+        <div class="product-card">
+            <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+          
+                <div class="product-title">
+                    <h4>CyberPunk</h4>
+                    <i class="fas fa-heart"></i>
+                </div>
+    
+                <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                <div class="price">$80<span>$100</span></div>
+                <div class="card-btn-wrapper">
+                    <a href="#">
+                        <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                    </a>
+                    <a href="#">
+                        <button class="outline-product-btn card-btn card-btn" type="button">Add To Cart</button>
+                    </a>
+                </div>
+                    </div>
+        <div class="product-card">
+                <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+              
+                    <div class="product-title">
+                        <h4>CyberPunk</h4>
+                        <i class="fas fa-heart"></i>
+                    </div>
+        
+                    <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                    <div class="price">$80<span>$100</span></div>
+                    <div class="card-btn-wrapper">
+                        <a href="#">
+                            <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                        </a>
+                        <a href="#">
+                            <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                        </a>
+                    </div>
+                    </div>
+        <div class="product-card">
+                    <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+                  
+                        <div class="product-title">
+                            <h4>CyberPunk</h4>
+                            <i class="fas fa-heart"></i>
+                        </div>
+            
+                        <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                        <div class="price">$80<span>$100</span></div>
+                        <div class="card-btn-wrapper">
+                            <a href="#">
+                                <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                            </a>
+                            <a href="#">
+                                <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                            </a>
+                        </div>
+                    </div>
+        <div class="product-card">
+                        <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+                      
+                            <div class="product-title">
+                                <h4>CyberPunk</h4>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                
+                            <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                            <div class="price">$80<span>$100</span></div>
+                            <div class="card-btn-wrapper">
+                                <a href="#">
+                                    <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                                </a>
+                                <a href="#">
+                                    <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                                </a>
+                            </div>
+                    </div>
+        <div class="product-card">
+                            <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+                          
+                                <div class="product-title">
+                                    <h4>CyberPunk</h4>
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                    
+                                <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                                <div class="price">$80<span>$100</span></div>
+                                <div class="card-btn-wrapper">
+                                    <a href="#">
+                                        <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                                    </a>
+                                </div>
+                    </div>
+        <div class="product-card">
+                                <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+                              
+                                    <div class="product-title">
+                                        <h4>CyberPunk</h4>
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                        
+                                    <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                                    <div class="price">$80<span>$100</span></div>
+                                    <div class="card-btn-wrapper">
+                                        <a href="#">
+                                            <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                                        </a>
+                                    </div>
+                    </div>
+        <div class="product-card">
+                                    <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+                                  
+                                        <div class="product-title">
+                                            <h4>CyberPunk</h4>
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                            
+                                        <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                                        <div class="price">$80<span>$100</span></div>
+                                        <div class="card-btn-wrapper">
+                                            <a href="#">
+                                                <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                                            </a>
+                                            <a href="#">
+                                                <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                                            </a>
+                                        </div>
+                    </div>
+    </div>   
+    </div>
+
+<!-- BEST PRICE PROFUCT SECTION -->
+<div class="container">
+    <h3 class="cards-heading">Best Price Games</h3>
+    <div class="product-card-wrapper">
+        <div class="product-card">
+            <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+          
+                <div class="product-title">
+                    <h4>CyberPunk</h4>
+                    <i class="fas fa-heart"></i>
+                </div>
+    
+                <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                <div class="price">$80<span>$100</span></div>
+                <div class="card-btn-wrapper">
+                    <a href="#">
+                        <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                    </a>
+                    <a href="#">
+                        <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                    </a>
+                </div>
+                    </div>
+        <div class="product-card">
+                <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+              
+                    <div class="product-title">
+                        <h4>CyberPunk</h4>
+                        <i class="fas fa-heart"></i>
+                    </div>
+        
+                    <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                    <div class="price">$80<span>$100</span></div>
+                    <div class="card-btn-wrapper">
+                        <a href="#">
+                            <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                        </a>
+                        <a href="#">
+                            <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                        </a>
+                    </div>
+                    </div>
+        <div class="product-card">
+                    <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+                  
+                        <div class="product-title">
+                            <h4>CyberPunk</h4>
+                            <i class="fas fa-heart"></i>
+                        </div>
+            
+                        <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                        <div class="price">$80<span>$100</span></div>
+                        <div class="card-btn-wrapper">
+                            <a href="#">
+                                <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                            </a>
+                            <a href="#">
+                                <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                            </a>
+                        </div>
+                    </div>
+        <div class="product-card">
+                        <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+                      
+                            <div class="product-title">
+                                <h4>CyberPunk</h4>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                
+                            <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                            <div class="price">$80<span>$100</span></div>
+                            <div class="card-btn-wrapper">
+                                <a href="#">
+                                    <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                                </a>
+                                <a href="#">
+                                    <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                                </a>
+                            </div>
+                    </div>
+        <div class="product-card">
+                            <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+                          
+                                <div class="product-title">
+                                    <h4>CyberPunk</h4>
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                    
+                                <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                                <div class="price">$80<span>$100</span></div>
+                                <div class="card-btn-wrapper">
+                                    <a href="#">
+                                        <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                                    </a>
+                                    <a href="#">
+                                        <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                                    </a>
+                                </div>
+                    </div>
+        <div class="product-card">
+                                <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+                              
+                                    <div class="product-title">
+                                        <h4>CyberPunk</h4>
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                        
+                                    <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                                    <div class="price">$80<span>$100</span></div>
+                                    <div class="card-btn-wrapper">
+                                        <a href="#">
+                                            <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                                        </a>
+                                    </div>
+                    </div>
+        <div class="product-card">
+                                    <img class="card-img" src="public\images\far-cry-6-listing.png" alt="" srcset="">
+                                  
+                                        <div class="product-title">
+                                            <h4>CyberPunk</h4>
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                            
+                                        <div class="ratings"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></div>
+                                        <div class="price">$80<span>$100</span></div>
+                                        <div class="card-btn-wrapper">
+                                            <a href="#">
+                                                <button class="solid-product-btn card-btn card-btn-solid " type="button">Buy Now</button>
+                                            </a>
+                                            <a href="#">
+                                                <button class="outline-product-btn card-btn" type="button">Add To Cart</button>
+                                            </a>
+                                        </div>
+                    </div>
+    </div>   
+</div>
+
+<!-- STORE SECTION -->
+<div class="container">
+    <h3 class="cards-heading">New on GamerGalaxy</h3>
+    <div class="store-wrapper">
+            <div class="big-box">
+                <div class="shop-tab">
+                    <img src="public\images\tshirts.jpg" alt="" srcset="" >
+                    <h5>T-Shirts</h5>
+                </div>
+    
+                <div class="shop-tab">
+                    <img src="public\images\headphones.jpg" alt="" srcset="" >
+                    <h5>Headphones</h5>
+                </div>
+    
+            </div>
+         
+            <div class="big-box">
+                <div class="shop-tab">
+                    <img src="public\images\decoration.jpg" alt="" srcset="" >
+                    <h5>Decorations</h5>
+                </div>
+    
+                <div class="shop-tab">
+                    <img src="public\images\console.jpg" alt="" srcset="" >
+                    <h5>Console</h5>
+                </div>
+            </div>
+        </div>
+        
+</div>
+
+<!-- ADS SECTION -->
+<div class="container ad-wrapper">
+    <h3 class="cards-heading">Hot deals and offers</h3>
+    <div class="row">
+        
+        <div class="col-sm-6"><img class="big-ad" src="public\images\ad1.png" alt="" srcset=""></div>
+        <div class="col-sm-6">
+            <img class="small-ad" src="public\images\ad3.jpg" alt="" srcset="">
+            <img class="small-ad" src="public\images\ad2.jpg" alt="" srcset="">
+        </div>
+    </div>
+</div> 
+
+<!-- PRICE STORE SECTION -->
+<div class="container">
+    <h3 class="cards-heading">Hot deals and offers</h3>
+    <div class="price-store">    
+        <img  src="public\images\price store 1.jpg" alt="" srcset="">
+        <img  src="public\images\price store 1.jpg" alt="" srcset="">
+        <img  src="public\images\price store 1.jpg" alt="" srcset="">
+    </div>
+</div>
+
+<!-- REVIEWS SECTION -->
+<div class="container">
+    <h3 class="cards-heading">Reviews</h3>
+    <div class="review-card-wrapper">
+        <div class="review-card">
+            <img src="public\images\fortnite.jpg" alt="" srcset="">
+            <div class="review-content">
+                <h4>Jason Carmaco</h4>
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                <p class="review">Review given by the customer</p>
+                <p class="date">23 June 2021</p> 
+            </div>
+        </div>
+
+        <div class="review-card">
+            <img src="public\images\fortnite.jpg" alt="" srcset="">
+            <div class="review-content">
+                <h4>Jason Carmaco</h4>
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                <p class="review">Review given by the customer</p>
+                <p class="date">23 June 2021</p> 
+            </div>
+        </div>
+
+        <div class="review-card">
+            <img src="public\images\fortnite.jpg" alt="" srcset="">
+            <div class="review-content">
+                <h4>Jason Carmaco</h4>
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                <p class="review">Review given by the customer</p>
+                <p class="date">23 June 2021</p> 
+            </div>
+        </div>
+
+        
+        <div class="review-card">
+            <img src="public\images\fortnite.jpg" alt="" srcset="">
+            <div class="review-content">
+                <h4>Jason Carmaco</h4>
+                <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                <p class="review">Review given by the customer</p>
+                <p class="date">23 June 2021</p> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SUBSCRIBE SECTION -->
+<div class="containerfluid subscribe-section">
+    <img src="public\images\daysgone.jpg" alt="" srcset="">
+    <center><form action="" method="post">
+        <h6>Subscribe for latest</h6>
+        <h1>Coupons and discounts</h1>
+        <input type="text" class="subscribe_txt" placeholder="Enter you Email-Id here">
+        <div class="content">
+            <input class="chk-box" type="checkbox" name="" id="">
+            <p>I agree to the terms of service and privacy policy</p>
+            <input class="solid-btn sub-sec-btn" type="submit" value="Sign Up">
+        </div>
+        
+    </form></center>
+</div>
+
+<!-- FOOTER SECTION -->
+
+<div class="container-fluid footer-color"> 
+    <div class="row footer-wrapper">
+
+        <div class="col-md-1 footer-column">
+          
+        </div>
+        <div class="col-sm-2 footer-column">
+            <h1 class="glow">Menu</h1>
+            <h5>Home</h5>
+            <h5>Blog</h5>
+            <h5>About Us</h5>
+            <h5>Contact Us</h5>
+        </div>
+        <div class="col-sm-2 footer-column">
+            <h1 class="glow">My Account</h1>
+            <h5>Login</h5>
+            <h5>Order History</h5>
+            <h5>My Wishlist</h5>
+            <h5>Track Order</h5>
+        </div>
+        <div class="col-sm-2 footer-column">
+            <h1 class="glow">Policies</h1>
+            <h5>Privacy Policy</h5>
+            <h5>Shipping Policy</h5>
+            <h5>Return Policy</h5>
+            <h5>Terms & Conditions</h5>
+            <h5>FAQs</h5>
+        </div>
+        <div class="col-sm-2 footer-column">
+            <h1 class="glow">Follow Us</h1>
+            <div class="socials">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        <div class="col-sm-3 footer-column">
+            <h1 class="glow">Be a Seller</h1>
+            <h5>Apply</h5>
+            <h5>Know More</h5>
+        </div>
+       
+    </div>
+    <div class="row footer-copyright"><center>Copyright © 2020-2021 GamerGalaxy | All Rights Reserved.</center></div>
+</div>
+
+
+<!--SCRIPT FILES-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<!--HEADER JAVASCRIPT FILES-->
+<script src="public/js/header.js" ></script>
+
+<!--SLIDER JAVASCRIPT FILES-->
+<script src="public\js\slider\splide.min.js"></script>
+<script>
+    const config={
+        type:'loop',
+        autoplay: true,  
+        interval:3000,
+        speed: 800,
+        easing:'ease',
+    }
+	new Splide( '.splide',config).mount();
+</script>
+</body>
+</html>

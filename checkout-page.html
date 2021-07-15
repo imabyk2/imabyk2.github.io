@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Secure Checkout</title>
+
+    <!-- BOOTSTRAP STYLES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!-- CUSTOM STYLES -->
+    <link rel="stylesheet" href="public/css/style.css" type="text/css">
+    <link rel="stylesheet" href="public\css\my-orders.css" type="text/css">
+    <link rel="stylesheet" href="public\css\checkout-page.css" type="text/css">
+    <link rel="stylesheet" href="public\css\profile-page.css" type="text/css">
+
+    <!-- SIDEBAR NAVIGATION STYLES -->
+    <link rel="stylesheet" href="public/css/side-nav-bar.css" type="text/css">
+    <link rel="stylesheet" href="public/css/footer.css" type="text/css">
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+
+<!-- HEADER-->
+<header class="header">
+    <ul class="navlinks">
+        <li><a href="home.html">
+            <i class="fas fa-home"></i><h6 class="side-navbar-label">Home</h6>
+        </a></li>
+        <li><a href="#">
+            <i class="fas fa-shopping-cart"></i><h6 class="side-navbar-label">Cart</h6>
+        </a></li>
+        <li><a href="user-inventory.html">
+            <i class="fas fa-gamepad"></i><h6 class="side-navbar-label">Inventory</h6>
+        </a></li>
+        <li><a href="profile-page.html">
+            <i class="fas fa-user"></i><h6 class="side-navbar-label">Profile</h6>
+        </a></li>
+        <li><a href="settings-page.html">
+            <i class="fas fa-sliders-h"></i><h6 class="side-navbar-label">Settings</h6>
+        </a></li>     
+    </ul>
+
+
+    <div class="lines">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</header>
+
+<div class="container">
+<div class="top-header">
+    <div class="left-side">
+        <div class="mob-hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+        </div>
+        <div class="logo"><a href="home.html">GG.</a></div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Here">
+            <a href="#"><div class="search-btn"><i class="fas fa-search"></i></div></a>
+        </div>
+    </div>
+    <div class="right-side">
+        <img class="wishlist-icon" src="public\images\wishlist icon.svg" alt="">
+        <a href="#"><div class="search-btn cart-btn"><i class="fas fa-shopping-cart"></i></div></a>
+        <a href="profile-page.html">
+            <img class="shadow"src="public\images\avatar.jpg" alt="" srcset="">
+        </a>
+    </div>
+</div>
+<div class="search-bar-mobile">
+    <input type="text" placeholder="Search Here">
+    <a href="#"><div class="search-btn"><i class="fas fa-search"></i></div></a>
+</div>
+</div>
+
+<!-- CHECKOUT SECTION -->
+<div class="container"> 
+    
+<div class="checkout-container">
+    <div class="checkout-left">
+        <div class="checkout-cards-container">
+            <div class="checkout-card">
+                <div class="product-details">
+                    <img src="public\images\fortnite.jpg" alt="" srcset="">
+                    <div class="card-title">
+                        <h4>Fortnite Season V</h4>
+                        <h6>Games Merchant</h6>
+                    </div>
+                </div>
+                <table>
+                    <tr><th>Price</th>
+                        <th>Quantity</th>
+                        <th>Tax</th>
+                        <th>Sub-Total</th>
+                    </tr>
+                    <tr>
+                        <td>$13.80</td>
+                        <td>1</td>
+                        <td>$00.00</td>
+                        <td>$13.80</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <div class="checkout-billing-address">
+            <div class="address-controls">
+                <h2>Billing Address</h2>
+                <button class="solid-btn change-add-btn">Change</button>
+
+            </div>
+            <div class="address-card">
+                
+                    <h6>Rashi Sharma</h6>
+                    <h6>HN. 10, Block 10,Sarojini</h6>
+                    <h6>New Delhi, Delhi</h6>
+                    <h6>India -110097</h6>
+                
+            </div>
+        </div>
+        <h2>Select Payment</h2>
+        <div class="checkout-payment-method">  
+            <div class="payment-card active">
+                <img src="public\images\Visa.png" alt="" srcset="">
+            </div>
+            <div class="payment-card">
+                <img src="public\images\Visa.png" alt="" srcset="">
+            </div>
+
+            <div class="payment-card">
+                <img src="public\images\Visa.png" alt="" srcset="">
+            </div>
+            <div class="payment-card">
+                <img src="public\images\Visa.png" alt="" srcset="">
+            </div>
+            <div class="payment-card">
+                <img src="public\images\Visa.png" alt="" srcset="">
+            </div>
+        </div>
+
+    </div>
+    <div class="checkout-right">
+            <div class="checkout-payment-card">
+                <table class="payment-table">
+                    <tr>
+                        <th>Subtotal</th>
+                        <td>$5.0</td>
+                    </tr>
+                    <tr>
+                        <th>Tax</th>
+                        <td>$0.0</td>
+                    </tr>
+                    <tr>
+                        <th>Payment Charges</th>
+                        <td>$0.0</td>
+                    </tr>
+                    <tr>
+                        <th>PDC</th>
+                        <td>$0.0</td>
+                    </tr>
+                    <tr>
+                        <th><h4>Grand Total<h4></th>
+                        <td><h4>$5.0</h4></td>
+                    </tr>
+                </table>
+                <div class="discount">
+                    <input type="text" placeholder="Redeem Coupon">
+                    <button class="solid-btn">Apply</button>
+                </div>
+                <div class="sign-up">
+                    <input type="checkbox">
+                    <p>Keep me up to date for latest offers and </p>
+                </div>
+            </div>
+            <div class="payment-integration">
+                <h6>Payment integration</h6>
+            </div>
+    </div>
+</div>
+</div>
+
+<!-- FOOTER SECTION -->
+<div class="container-fluid footer-color"> 
+    <div class="row footer-wrapper">
+
+        <div class="col-md-1 footer-column">
+          
+        </div>
+        <div class="col-sm-2 footer-column">
+            <h1 class="glow">Menu</h1>
+            <h5>Home</h5>
+            <h5>Blog</h5>
+            <h5>About Us</h5>
+            <h5>Contact Us</h5>
+        </div>
+        <div class="col-sm-2 footer-column">
+            <h1 class="glow">My Account</h1>
+            <h5>Login</h5>
+            <h5>Order History</h5>
+            <h5>My Wishlist</h5>
+            <h5>Track Order</h5>
+        </div>
+        <div class="col-sm-2 footer-column">
+            <h1 class="glow">Policies</h1>
+            <h5>Privacy Policy</h5>
+            <h5>Shipping Policy</h5>
+            <h5>Return Policy</h5>
+            <h5>Terms & Conditions</h5>
+            <h5>FAQs</h5>
+        </div>
+        <div class="col-sm-2 footer-column">
+            <h1 class="glow">Follow Us</h1>
+            <div class="socials">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+        <div class="col-sm-3 footer-column">
+            <h1 class="glow">Be a Seller</h1>
+            <h5>Apply</h5>
+            <h5>Know More</h5>
+        </div>
+       
+    </div>
+    <div class="row footer-copyright"><center>Copyright © 2020-2021 GamerGalaxy | All Rights Reserved.</center></div>
+</div>
+
+<!-- ADDRESS CHANGE MODAL -->
+<div class="order-modal-bg">
+    <div class="address-modal-container">
+            <h4>Select Address</h4>
+        
+            <button class="add-new-address">Add New Adress</button>
+            
+            <div class="modal-address-card-container">
+                
+                <div class="modal-address-card">
+                    <h6>Rashi Sharma</h6>
+                    <h6>HN. 10, Block 10,Sarojini</h6>
+                    <h6>New Delhi, Delhi</h6>
+                    <h6>India -110097</h6>
+                </div>
+
+                <div class="modal-address-card">
+                    <h6>Rashi Sharma</h6>
+                    <h6>HN. 10, Block 10,Sarojini</h6>
+                    <h6>New Delhi, Delhi</h6>
+                    <h6>India -110097</h6>
+                </div>
+
+                <div class="modal-address-card">
+                    <h6>Rashi Sharma</h6>
+                    <h6>HN. 10, Block 10,Sarojini</h6>
+                    <h6>New Delhi, Delhi</h6>
+                    <h6>India -110097</h6>
+                </div>            
+            </div>
+
+            <div class="address-btn-controls">
+                <button type="button" class="modal-btn btn-glow">Change</button>
+                <button id="modal-close-btn" class="modal-btn btn-glow" type="button">Close</button>
+            </div>
+       
+    </div>
+</div>
+
+<!-- SCRIPT FILES ------------------------------------------------->
+<script src="public/js/header.js" ></script>
+<script src="public/js/change-address-modal.js" ></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.payment-card').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    });
+</script>
+
+
+</body>
+</html>

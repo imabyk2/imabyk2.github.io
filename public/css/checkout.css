@@ -1,0 +1,231 @@
+.pos-checkout-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.secure-checkout{
+    width: 50%;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+}
+.pay-proceed-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.checkout-container{
+    width:40%;
+}
+
+.checkout-card{
+    width: 100%;
+    height: 150px;
+    background: rgb(56, 56, 56);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin:30px 0px
+}
+
+.checkout-card img{
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+}
+
+
+.checkout-card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}
+
+.pricing-tbl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.pricing-tbl .row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pricing-tbl hr{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(92, 92, 92);
+}
+
+.pricing-tbl h3{
+    color: rgb(255, 208, 0);
+}
+
+
+/* ------------------CHECK OUT STEP 2-------------------*/
+
+.form-pos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.billing-information-form{
+    width:50%;
+    margin: 0px 0px 50px 0px;
+    color: white;
+}
+
+.billing-information-form h1,h3{
+    text-align: center;
+}
+
+
+.billing-information-form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+
+}
+
+.billing-information-form h6{
+    font-size: 15px;
+    color: white;
+}
+
+.billing-information-form input{
+    height: 45px;
+    width: 100%;
+    background-color: #202020;
+    border: 2px solid white;
+    border-radius: 13px;
+    padding-left: 20px;
+    color: white;
+}
+
+
+.billing-information-form .btn-div{
+    justify-content: center;
+    align-items: center;
+}
+
+.billing-information-form .name-fields{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.name-fields span{
+    width: 50%;
+}
+
+.right-align{
+    padding-left: 5%;
+}
+.name-fields input{
+    width: 100%;
+}
+
+.checkout-progress-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin: 50px;
+}
+
+.checkout-progress-bar .box{
+    height: 50px;
+    width: 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: transparent;
+    border: 5px solid #b512ff
+}
+
+.checkout-progress-bar hr{
+    height: 5px;
+    width: 30%;
+    background-color: #b512ff;
+  
+}
+
+.checkout-progress-bar .active{
+    background-color: #b512ff;
+}
+
+.checkout-progress-bar i{
+    font-size: 30px;
+    color: #fff;
+}
+
+.invisible{
+    display: none;
+}
+
+/* ------------------CHECK OUT STEP 3-------------------*/
+
+.billing-information-form .payment-card{
+    width: 100%;
+    height: 75px;
+    border-radius: 20px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    margin:20px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    padding: 20px;
+}
+
+.payment-card input{
+    height: 30px;
+    width: 30px;
+    padding-left: 10px;
+}
+
+.payment-card label{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.payment-integration{
+    height: 400px;
+    width: 100%;
+    border-radius: 40px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

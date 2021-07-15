@@ -1,0 +1,573 @@
+.my-order-container{
+    width: 100%;
+    margin-top: 25px;
+}
+.my-order-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 40px;
+    background-color: rgb(59, 59, 59);
+    padding: 25px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.my-order-card img{
+    height: 150px;
+    width: 150px;
+    border-radius: 40px;
+}
+
+.my-order-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: 40%;
+    justify-self: flex-start;
+
+}
+.my-order-extras{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    width: 30%;
+    justify-self: flex-start;
+
+}
+
+.my-order-details div, .my-order-details div{
+    width: 100%;
+}
+
+.more-info-btn, .track-info-btn{
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #b512ff;
+    border: 0px;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.my-order-details h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* --------MODAL STYLING --------------------------------------------------*/
+.bg-blur{
+    filter: blur(10px);
+}
+.order-modal-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+    filter: blur(0px) !important;
+}
+
+.modal-active{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.3s;
+    filter: blur(0px) !important;
+}
+
+.order-modal-bg .order-modal{
+    height: 425px;
+    width: 40%;
+    background-color: rgb(53, 53, 53);
+    border-radius: 50px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    filter: blur(0px) !important;
+}
+.order-modal .modal-card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 37, 37);
+    padding: 20px;
+    border-radius: 30px;
+    
+}
+
+.order-modal h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal-card .modal-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    color: white;
+}
+
+.table-content{
+    width: 100%;
+}
+
+.order-modal h6{
+    line-height: 12px;
+}
+
+
+.modal-card .modal-table .table-row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+.modal-card .modal-table .table-row h6{
+    font-size: 15px;
+}
+.modal-card img{
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.yellow-row{
+    color: rgb(255, 217, 0);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.order-modal .order-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.billing, .payment{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.payment .card-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.payment .card-details div{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    
+}
+
+.payment .card-details img{
+    height : 15px;
+    margin-right: 10px;
+}
+
+.order-modal .controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.controls .download-invoice-btn{
+    width: 200px !important;
+
+}
+
+.small-btn{
+    margin-right: 0px;
+}
+
+
+
+
+/*---------------------------------------------*/
+@media only screen and (max-width: 1024px){
+    .order-modal-bg .order-modal{
+        width: 50%;
+
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .order-modal-bg .order-modal{
+        width: 60%;
+
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 420px){
+    .my-order-card{
+        height: 100px;
+        width: 100%;
+        border-radius: 20px;
+        background-color: rgb(59, 59, 59);
+        padding: 10px;
+        color: white;
+    }
+    
+    .my-order-card img{
+        height: 70px;
+        width: 70px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    
+    .my-order-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        width: 40%;
+        justify-self: flex-start;
+    
+    }
+    .my-order-extras{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        width: 30%;
+        justify-self: flex-start;
+    
+    }
+    
+    .my-order-details div, .my-order-details div{
+        width: 100%;
+    }
+    
+    .more-info-btn, .track-info-btn{
+        width: 80%;
+        height: 30px;
+        font-size: 15px;
+        background-color: #b512ff;
+        border: 0px;
+        outline: none;
+        border-radius: 7px;
+        color: white;
+        font-weight: 600;
+    }
+    
+    .my-order-card h2{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .my-order-card h3{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .my-order-card h6{
+        font-size: 10px;
+        font-weight: 500;
+    }
+        
+    /* --------MOBILE MODAL STYLING --------------------------------------------------*/
+
+
+    .order-modal-bg .order-modal{
+        height: 550px;
+        width: 90%;
+        background-color: rgb(53, 53, 53);
+        border-radius: 50px;
+        padding: 25px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        filter: blur(0px) !important;
+    }
+    .order-modal .modal-card{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(37, 37, 37);
+        padding: 20px;
+        border-radius: 30px; 
+    }
+
+    .order-modal h4{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .modal-card .modal-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 60%;
+        color: white;
+    }
+
+    .table-content{
+        width: 100%;
+    }
+
+    .order-modal h6{
+        line-height: 12px;
+    }
+
+    .modal-card .modal-table .table-row{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; 
+    }
+
+    .modal-card .modal-table .table-row h6{
+        font-size: 15px;
+    }
+
+    .modal-card img{
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .yellow-row{
+        color: rgb(255, 217, 0);
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .order-modal .order-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .order-modal .order-details h6{
+        font-weight: 300;
+    }
+
+    .billing, .payment{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .payment .card-details{
+        margin-bottom: 10px;
+    }
+
+    .payment .card-details img{
+        height : 20px;
+        margin-right: 10px;
+    }
+
+    .order-modal .controls{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .controls .download-invoice-btn{
+        width: 200px !important;
+
+    }
+
+    .big-btn{
+        min-width: 200px !important;
+    }
+
+    .small-btn{
+        margin-right: 0px;
+    }
+
+ 
+
+}
+
+@media only screen and (max-width: 375px){
+   
+    .my-order-card h3{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .my-order-card h6{
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+/*-------------------------------------------*/
+
+    .order-modal-bg .order-modal{
+        height: 575px;
+        width: 90%;
+        background-color: rgb(53, 53, 53);
+        border-radius: 50px;
+        padding: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        filter: blur(0px) !important;
+    }
+    .order-modal .modal-card{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(37, 37, 37);
+        padding: 15px;
+        border-radius: 30px; 
+    }
+
+    .order-modal h4{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .modal-card .modal-table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 60%;
+        color: white;
+    }
+
+    .table-content{
+        width: 100%;
+    }
+
+    .order-modal h6{
+        line-height: 12px;
+    }
+
+    .modal-card .modal-table .table-row{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; 
+    }
+
+    .modal-card .modal-table .table-row h6{
+        font-size: 15px;
+    }
+
+    .modal-card img{
+        height: 90px;
+        width: 90px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .yellow-row{
+        color: rgb(255, 217, 0);
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .order-modal .order-details{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .order-modal .order-details h6{
+        font-weight: 300;
+    }
+
+    .billing, .payment{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .payment .card-details{
+        margin-bottom: 10px;
+    }
+
+    .payment .card-details img{
+        height : 20px;
+        margin-right: 10px;
+    }
+
+    .order-modal .controls{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .controls .download-invoice-btn{
+        width: 200px !important;
+
+    }
+
+    .big-btn{
+        min-width: 200px !important;
+    }
+
+    .small-btn{
+        margin-right: 0px;
+    }
+
+}

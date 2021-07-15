@@ -1,0 +1,340 @@
+.containerM{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.track-order-container{
+    width: 70% !important;
+    height: 100%;
+}
+.track-order-container h1{
+    color: white;
+    font-weight: 500;
+}
+
+.track-order-container .order-id{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.track-order-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    color: white;
+    padding: 30px;
+    border-radius: 40px;
+    background-color: rgb(59, 59, 59);
+    margin-top:50px;
+}
+.track-order-card .left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-start;
+    width: 70%;
+    
+}
+
+.track-order-card .left .order-info{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.track-order-card .left img{
+    height: 150px;
+    width: 150px;
+    border-radius: 40px;
+    margin-right: 25px ;
+}
+
+
+.track-order-card .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+    height: 100%;
+}
+
+.track-order-container a{
+    color: white;
+    text-decoration: underline;
+}
+
+.track-order-container a:hover{
+    color: #b512ff;
+    
+}
+
+/* TIME LINE */
+.timeline{
+    width: 100%;
+    margin-top: 25px;
+}
+
+.timeline ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: white;
+}
+.timeline ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.timeline ul li .box{
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    background-color: #b512ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.timeline ul li h6{
+    font-size: 10px;
+    text-align: center;
+}
+.timeline ul:first-child::after{
+    content: '';
+    width: 60%;
+    height: 5px;
+    background-color: #b512ff;
+    position: absolute;
+    z-index: -1;
+    margin: -10px auto 0px 20px;
+
+}
+@media only screen and (max-width: 768px){
+    .track-order-container{
+        width: 90% !important;     
+    
+    }
+    .timeline{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .timeline ul:first-child::after{
+        width: 75%;
+    }
+
+    .track-order-card h4{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .track-order-card h6{
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .track-order-card h2{
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+}
+@media only screen and (max-width: 420px){
+    
+    .track-order-container{
+        width: 100% !important;
+    }
+    .track-order-container h1{
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .track-order-card{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        height: 150px;
+        color: white;
+        padding: 25px 7px;
+        border-radius: 30px;
+        background-color: rgb(42, 42, 42);
+        margin-top:50px;
+
+    }
+    .track-order-card .left{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-start;
+        width: 70%;
+        
+    }
+
+    .track-order-card .left .order-info{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .track-order-card .left img{
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+        margin-right: 15px ;
+    }
+
+
+    .track-order-card .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 40%;
+        height: 100%;
+    }
+
+    .track-order-container a{
+        color: white;
+        text-decoration: underline;
+    }
+
+    .track-order-container a:hover{
+        color: #b512ff;
+        
+    }
+
+
+    .track-order-card h4{
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .track-order-card h6{
+        font-size: 11px;
+        font-weight: 300;
+    }
+
+    .track-order-card h2{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+
+    /* TIME LINE */
+    .timeline{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .timeline ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        color: white;
+    }
+    .timeline ul li{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .timeline ul li .box{
+        height: 30px;
+        width: 30px;
+        border-radius: 10px;
+        background-color: #b512ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .timeline ul li h6{
+        font-size: 10px;
+        text-align: center;
+    }
+    .timeline ul:first-child::after{
+        content: '';
+        width: 80%;
+        height: 5px;
+        background-color: #b512ff;
+        position: absolute;
+        z-index: -1;
+        margin: -10px auto 0px 20px;
+
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+
+    
+    .track-order-card{
+       
+        width: 100%;
+      
+        height: 100px;
+        color: white;
+        padding: 10px 7px;
+        border-radius: 15px;
+       
+
+    }
+    .track-order-card .left{
+ 
+        width: 60%;
+        
+    }
+
+    .track-order-card .left img{
+        height: 75px;
+        width: 75px;
+        border-radius: 20px;
+        margin-right: 15px ;
+    }
+
+
+    .track-order-card .right{
+        width: 40%;
+        height: 100%;
+        padding-left: 20px;
+    }
+
+    .track-order-card h4{
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .track-order-card h6{
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .track-order-card h2{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+}

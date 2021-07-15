@@ -1,0 +1,73 @@
+
+
+.menu-selected{
+    background: #b512ff;
+    border-radius: 20px 20px 20px 20px !important;
+}
+
+
+.inventory-card-container{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventory-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 40px;
+    padding: 20px;
+    margin: 20px 40px;
+}
+
+.inventory-card img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+
+.inventory-btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(181,30,255,1);
+    color: #fff;
+    border: 0px;
+    font-weight: 600;
+}
+
+.inventory-modal{
+    height: 200px !important;
+}
+
+.inventory-modal h2{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 420px){
+    .inventory-modal h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .small-btn{
+        margin: auto;
+    }
+
+    .menu-selected{
+        background: #b512ff;
+        border-radius: 10px 10px 10px 10px !important;
+    }
+    
+    
+}

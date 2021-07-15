@@ -1,0 +1,408 @@
+.bg-overlxay{
+    background-image: url(../images/cyberpunk.jpg);
+}
+
+.background-img-overlay img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    z-index:-11;
+    opacity: 1;
+}
+
+.background-img-overlay div{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    z-index:-10;
+    left: 0px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #100118);
+}
+
+.product-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    color: white;
+}
+
+.product-page img{
+    width: 50%;
+    border-radius: 10%;
+    position: sticky;
+    top: 0px;
+}
+
+.product-page .one-product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 60%;
+    height: 100%;
+    padding: 50px;
+}
+
+.one-product-info h1{
+    font-size: 50px;
+}
+.one-product-info .rating{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.one-product-info p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.one-product-info .rating i{
+    font-size: 20px;
+}
+.one-product-info .rating h6, .one-product-info .price h6{
+    color: black;
+    background-color: #ffbb00;
+    padding: 5px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.product-page .product-info-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.one-product-info .price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.one-product-info .price h2{
+    color: rgb(168, 168, 168);
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.product-page .sub-info{
+    width: 50%;
+}
+
+.product-page .sub-info ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.product-page .sub-info ul li{
+    border: 3px solid #b512ff;
+    border-radius: 12px;
+    padding:3px 5px;
+    font-size: 15px;
+    margin: 3px;
+    list-style: none;
+    color: #b512ff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.selected{
+    color: #fff !important;
+    background-color: #b512ff;
+    font-weight:700;
+}
+
+.product-page hr{
+    width: 100%;
+    height: 1px;
+    background-color:#b512ff ;
+}
+
+.product-page .price,.product-page .buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-page .buttons .heart-btn{
+    height: 45px;
+    width: 45px;
+}
+
+/* -------------------- PRODUCT DESCRIPTION -------------------- */
+
+.production-description-menu{
+    color: whitesmoke;
+    margin-top: 50px;
+}
+.production-description-menu .menu-nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-nav ul li{
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 20px 20px 0px 0px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.menu-selected{
+    background: #b512ff;
+}
+
+.production-description-menu .menu-items{
+    border: 7px solid #b512ff;
+    border-radius: 0px 40px 40px 40px;
+    height: 400px;
+    background-color: rgb(47, 47, 47);
+    margin-top: -17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    
+}
+
+.menu-items .content-container{
+    width: 90%;
+    height: 325px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+
+.menu-items .product-description-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    margin: 30px 0px; 
+}
+
+.system-requirements{
+    width: 100%;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center!important;
+    align-items: center;
+}
+
+.system-requirements-table{
+    width:100%;
+    align-self: center;
+    margin: 30px auto;
+}
+
+.system-requirements-table td,.system-requirements-table th{
+    padding:5px 20px;
+}
+
+.display-none{
+    display: none !important;
+    transition: all 0.3s ease;
+}
+
+
+ 
+@media only screen and (max-width: 420px){
+    .product-page{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .product-page img{
+        width:100%;
+        margin-top: 20px;
+        position: relative;
+    }
+    
+    .product-page .one-product-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        padding: 0px;
+        margin-top: 25px;
+        
+    }
+    
+    .one-product-info h1{
+        font-size:40px;
+        width: 100%;
+    }
+    .one-product-info .rating{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .one-product-info p{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    
+
+    .one-product-info .rating h6, .one-product-info .price h6{
+        color: black;
+        background-color: #ffbb00;
+        padding: 3px 5px;
+        font-size: 17px;
+        font-weight: 600;
+        margin-left: 10px;
+        min-width: 90px ;
+    }
+    .product-page .product-info-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin: 20px 0px;
+    }
+    
+    .one-product-info .price{
+        justify-content: flex-start;
+        width: 80%;
+        align-self: flex-start;
+    }
+
+    .product-page .sub-info{
+        width: 50%;
+    }
+
+    .product-page .sub-info ul li{
+        font-size: 17px;
+        margin: 5px;
+    }
+
+
+    .product-page .price,.product-page .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    
+    
+    .product-page .buttons .heart-btn{
+        font-size: 40px;
+        color: rgb(184, 0, 107);
+    }
+    
+    
+/* -------------------- PRODUCT DESCRIPTION -------------------- */
+    .production-description-menu .menu-nav ul{
+       
+        align-items: center;
+        list-style: none;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    .menu-nav ul li{
+        padding: 10px 10px;
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .production-description-menu .menu-items{
+        border: 5px solid #b512ff;
+        border-radius: 40px;
+        height: 500px;
+        background-color: rgb(47, 47, 47);
+        margin-top: -25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        
+    }
+
+    .menu-items .content-container{
+        width: 90%;
+        height: 90%; 
+    }
+
+    .menu-items .product-description-row{
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin: 30px 0px; 
+    }
+
+    .product-description-row .sub-info{
+        margin-bottom: 20px ;
+    }
+
+    .menu-items p{
+        font-size: 17px;
+    }
+    .system-requirements{
+        width: 100%;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center!important;
+        align-items: center;
+    }
+
+    .system-requirements-table{
+        width:100%;
+        align-self: center;
+        margin: 30px auto;
+    }
+
+    .system-requirements-table td,.system-requirements-table th{
+        padding:5px 20px;
+    }
+
+    .display-none{
+        display: none !important;
+        transition: all 0.3s ease;
+    }
+    .btn-quick-fix{
+        min-width: 125px !important;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .buttons button{
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
