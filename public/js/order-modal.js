@@ -1,4 +1,4 @@
-var modalbtn = document.getElementsByClassName('avatar-modal');
+var modalbtn = document.getElementsByClassName('more-info-btn');
 var modalbg = document.querySelector('.order-modal-bg');
 var orderpage = document.querySelector('#order-page')
 var closebtn = document.querySelector('#modal-close-btn');
