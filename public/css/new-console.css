@@ -1,0 +1,119 @@
+.row-console{
+    margin-top: 50px;
+}
+
+.new-console-store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    border: 3px solid rgb(110, 110, 110);
+    border-radius: 30px;  
+    cursor: pointer;
+}
+
+.new-console-store .logo {
+    height: 75%;
+    fill: rgb(110, 110, 110);
+}
+
+.new-console-store:hover{
+    transform: scale(105%);
+    filter: drop-shadow(0px 10px 5px #00000059);
+}
+
+
+.xbox:hover {
+    background-color: green;
+    border-color: green; 
+}
+
+.playstation:hover{
+    background-color: #004098;
+    border-color: #004098; 
+}
+
+.nintendo:hover{
+    background-color: #ed1c24;
+    border-color: #ed1c24; 
+}
+
+.pc:hover{
+    background-color: #8fb10a;
+    border-color: #8fb10a; 
+}
+
+
+.best-price{
+    z-index: 20100;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+}
+.front{
+    z-index: 20000;
+    animation: f1 4s infinite linear;
+}
+
+.left{
+    animation: f1 5s infinite linear;
+}
+
+.right{
+    animation: f1 7s infinite linear;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 420px){
+
+    .new-console-store{
+        width: 70px;
+        height:70px;
+        border-radius: 20px;
+        border: 0px;
+    }
+
+    .new-console-store .logo {
+        height: 80%;
+    }
+    .xbox {
+        background-color: green;
+        border-color: green; 
+    }
+    
+    .playstation{
+        background-color: #004098;
+        border-color: #004098; 
+    }
+    
+    .nintendo{
+        background-color: #ed1c24;
+        border-color: #ed1c24; 
+        
+
+    }
+    .nintendo > .logo{
+        height: 50%;
+    }
+    
+    .pc{
+        background-color: #8fb10a;
+        border-color: #8fb10a; 
+    }
+
+    .console-text{
+        color: #fff;
+        padding-left: 5px;
+        padding-top: 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+}
