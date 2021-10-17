@@ -374,7 +374,7 @@ button:hover{
     font-size: 30px;
     margin-top:100px;
 }
-/*
+
 .product-card{
     width: 300px;
     min-height: 400px;
@@ -488,7 +488,7 @@ button:hover{
     overflow-y: hidden;
     overflow-x: auto ;
 }
-*/
+
 
 .store-wrapper{
     display: flex;
